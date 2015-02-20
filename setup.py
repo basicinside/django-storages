@@ -9,7 +9,7 @@ def read(filename):
 setup(
     name='django-storages-redux',
     version=storages.__version__,
-    packages=['storages', 'storages.backends'],
+    packages=['storages', 'storages.backends', 'storages.management'],
     author='Josh Schneier',
     author_email='josh.schneier@gmail.com',
     license='BSD',
