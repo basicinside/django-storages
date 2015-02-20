@@ -30,6 +30,8 @@ if boto_version_info[:2] < (2, 32):
     raise ImproperlyConfigured("The installed Boto library must be 2.32 or "
                                "higher.\nSee https://github.com/boto/boto")
 
+os.environ['S3_USE_SIGV4'] = 'True'
+
 
 def parse_ts_extended(ts):
     warnings.warn(
